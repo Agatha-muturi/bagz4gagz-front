@@ -18,7 +18,7 @@ export function CartProvider({children}) {
             return[{product,qty}, ...prev];
         });
     };
-    const removeFromCar =(productId)=> {
+    const removeFromCart =(productId)=> {
         setItems(prev=>prev.filter(i=>i.product.id !==productId));
     };
     const updateQty = (productId,qty)=>{
